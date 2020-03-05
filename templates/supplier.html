@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <body>
+    <!-- Material form register -->
+    <div class="card">
+      <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Sign up</strong>
+      </h5>
+
+      <!--Card content-->
+      <div class="card-body px-lg-5 pt-0">
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" action="#!" method="POST">
+          <div class="form-row">
+            <div class="col">
+              <!-- First name -->
+              <div class="md-form">
+                {{ form.suppliername}}
+                <label for="materialRegisterFormFirstName">suppliername</label>
+              </div>
+            </div>
+            <div class="col">
+              <!-- Last name -->
+              <div class="md-form">
+                {{ form.tendertype}}
+                <label for="tendertype">Tender Type</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-mail -->
+          <div class="md-form mt-0">
+            {{form.contactemail}}
+            <label for="mail">Contact Email</label>
+          </div>
+
+          <!-- Phone number -->
+          <div class="md-form">
+            {{ form.phonenumber}}
+            <label for="phonenumber">Phone number</label>
+            <small
+              id="materialRegisterFormPhoneHelpBlock"
+              class="form-text text-muted mb-4"
+            >
+              Optional
+            </small>
+          </div>
+          <!--Material textarea-->
+          <div class="md-form">
+            {{ form.technicalrequirement}}
+            <label for="form7">Technical Requirements</label>
+          </div>
+          
+          <!--Material textarea-->
+          <div class="md-form">
+            {{ form.mandatoryrequirement}}
+            <label for="form7">Mandatory Requirements</label>
+        </div>
+
+        <button
+            class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+            type="submit"
+          >
+          Post
+        </button>
+        
+    </div>
+        </form>
+
+        <!-- Form -->
+      </div>
+    </div>
+    <!-- Material form register -->
+  </body>
+</html>
